@@ -5,6 +5,7 @@
     <title>Core</title>
     <script type="text/javascript">
         function onDocLoad() {
+            breakpoint;
             var qs = location.search.substring(1);
             var codeM = /(?:code\=([^&]+)\&?)/.exec(qs);
             if (!codeM || codeM.length < 1) {
@@ -81,7 +82,7 @@
     <div class="container">
         <h1>Code<span>:</span></h1>
         <p>Code for script</p>
-        <input type="text" placeholder="Code parameter is missing" id="codeText" readonly="true" size="40" onfocus="this.select();" />
+        <input type="text" placeholder="Code parameter is missing" id="codeText" readonly="true" size="40" />
     </div>
 
 </body>
